@@ -5,7 +5,6 @@
 	<meta charset="UTF-8">
 	<link rel="stylesheet" href="/assets/css/style.css" type="text/css" />
 	<title>Eat-Da-Burger</title>
-	<script src="../../assets/js/burger.js"></script>
 	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bulma/0.7.5/css/bulma.css"
 		integrity="sha256-ujE/ZUB6CMZmyJSgQjXGCF4sRRneOimQplBVLu8OU5w=" crossorigin="anonymous" />
 </head>
@@ -17,16 +16,27 @@
 				<!--Empty-->
 			</div>
 			<div class="column is-three-fifths is-centered">
-				<p class="bd-notification is-primary">Click to add new burgers or the to devour</p>
-			</div>
-			<div class="column is-one-fifths">
-				<!--Empty-->
+				<p class="bd-notification is-primary"><h1>Click to add new burgers or the to devour</h1></p>
 			</div>
 		</div>
 		<div class="columns is-vcentered is-centered">
 		{{{ body }}}
 		</div>
+		<div class="columns is-vcentered is-centered">
+			<div class="column is-one-fifths">
+				<!--Empy Div-->
+			</div>
+			<div class="column is-three-fifths is-centered">
+				<input type="text" id="newBurgID" value="Submit" />
+				<br>
+				<button type="submit" class="button is-success" id="burger-submit">
+					New Burger to Eat
+				</button>
+			</div>
+		</div>
 	</div>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/axios/0.19.0/axios.js" integrity="sha256-XmdRbTre/3RulhYk/cOBUMpYlaAp2Rpo/s556u0OIKk=" crossorigin="anonymous"></script>
+	<script src="../../assets/js/burger.js"></script>
 </body>
 
 </html>

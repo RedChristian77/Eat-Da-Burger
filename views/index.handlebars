@@ -1,7 +1,15 @@
 <div class="column is-half">
     {{#each burger}}
-        {{#unless devoured}}
-        <p>{{burger_name}} Waiting to be eaten!</p>
-        <button type="submit" class="button is-black devoured" data-id={{id}}>NUM NUM</button>
+    {{#unless devoured}}
+    <p>{{burger_name}} Waiting to be eaten!</p>
+    <button type="submit" class="button is-black devoured" data-id={{id}}>NUM NUM</button>
+    {{/unless}}
+    {{/each}}
+</div>
+<div class="column is-half">
+    {{#each burger}}
+    {{#if devoured}}
+    <p><b>{{burger_name}}</b> has been eaten</p>
+    {{/if}}
     {{/each}}
 </div>
