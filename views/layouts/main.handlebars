@@ -1,17 +1,32 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
 	<meta charset="UTF-8">
-		<link rel="stylesheet" href="/assets/css/style.css" type="text/css" />
-		<title>Eat-Da-Burger</title>
-		<script src="../../assets/js/burger.js"></script>
-	</head>
-	<body>
+	<link rel="stylesheet" href="/assets/css/style.css" type="text/css" />
+	<title>Eat-Da-Burger</title>
+	<script src="../../assets/js/burger.js"></script>
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bulma/0.7.5/css/bulma.css"
+		integrity="sha256-ujE/ZUB6CMZmyJSgQjXGCF4sRRneOimQplBVLu8OU5w=" crossorigin="anonymous" />
+</head>
+
+<body>
+	<div class="container">
+		<div class="columns is-vcentered is-centered">
+			<div class="column is-one-fifths">
+				<!--Empty-->
+			</div>
+			<div class="column is-three-fifths is-centered">
+				<p class="bd-notification is-primary">Click to add new burgers or the to devour</p>
+			</div>
+			<div class="column is-one-fifths">
+				<!--Empty-->
+			</div>
+		</div>
+		<div class="columns is-vcentered is-centered">
 		{{{ body }}}
-        <br>
-        <div>
-            <textarea rows="2" cols="50" id="burger" placeholder="Put burger Here"></textarea>
-            <button id="devouredBurg">Add to list to be Devoured</button>
-        </div>
-	</body>
+		</div>
+	</div>
+</body>
+
 </html>

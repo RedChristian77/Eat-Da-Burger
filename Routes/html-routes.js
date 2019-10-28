@@ -1,16 +1,8 @@
-var path = require("path");
-let burgers = require("./api-routes")
-// Routes
-// =============================================================
-module.exports = function(app) {
+const db = require("../models");
 
-  // index route loads view.html
-  app.get("/", function(req, res) {
-          res.render("index",res);
-    });
-
-
-
-
-
+module.exports = function (app) {
+  app.get("/", async function (req, res) {
+    const burgersDB = await db.Burger.findAll({});
+    res.render("index", {burger: burgersDB});
+  });
 };
